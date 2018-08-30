@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>jQM Complex Demo</title>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no; target-densityDpi=device-dpi" />
+  <link rel="stylesheet" href="http://ququplay.github.io/jquery-mobile-flat-ui-theme/css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+      <script type="text/javascript" src="js/underscore-min.js"></script>
+      <script type="text/javascript" src="js/backbone-min.js"></script>
+      <script type="text/javascript" src="js/joystick_view.js"></script>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+      <script type="text/javascript" src="https://cdn.rawgit.com/Foliotek/AjaxQ/master/ajaxq.js"></script>
+      <script type="text/javascript" src="https://cdn.rawgit.com/marcoschwartz/aREST.js/master/aREST.js"></script>
+        <script type="text/javascript" src="./js/index.js"></script>
+  </head>
+</head>
+
+<body>
+  <div data-role="page">
+
+    <div data-role="header" data-position="fixed">
+      <a href="#" data-role="button">Back</a>
+      <h1>My Title</h1>
+    </div>
+    <!-- /header -->
+
+    <div data-role="content">
+
+
+
+
+
+
+      <div data-role="fieldcontain">
+        <label for="name-c"> IP:</label>
+        <br>
+        <br>
+
+        <input type="text" name="ip" id="ip" value=""  placeholder="EX:192.168.43.22 " />
+        <br>
+        <br>
+        <button type="submit" id= "submit" class="btn btn-primary">Envoyer</button>
+      </div>
+
+
+
+      <div data-role="fieldcontain">
+        <label for="slider-c">Vitesse:</label>
+        <br>
+        <br>
+        <input type="range" name="slider" id="slider-c" value="200" min="200" max="600" />
+      </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+  <script type="text/html" id="joystick-view">
+    <canvas id="joystickCanvas" width="<%= squareSize %>" height="<%= squareSize %>" style="width: <%= squareSize %>px; height: <%= squareSize %>px;">
+        </canvas>
+    </script>
+
+    <div id="joystickContent">
+    </div>
+    <div>
+        x: <span id="xVal"></span><br/>
+        y: <span id="yVal"></span><br/>
+    </div>
+
+
+
+    </div>
+    <!-- /content -->
+
+    <div data-role="footer" data-position="fixed">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#" data-icon="gear" class="ui-btn-active ui-state-persist">Button 1</a>
+          </li>
+          <li><a href="#" data-icon="refresh">Button 2</a>
+          </li>
+          <li><a href="#" data-icon="check">Button 3</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <!-- /page -->
+</body>
+
+</html>
